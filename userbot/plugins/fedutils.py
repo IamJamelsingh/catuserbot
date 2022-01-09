@@ -610,12 +610,9 @@ async def fstat_rose(event):
             )
         await event.client.send_read_acknowledge(conv.chat_id)
         conv.cancel()
+             
         
-        
-        
-        
-        
-        import asyncio
+      import asyncio
 
 #  (c)2020 Telebot
 #
@@ -688,7 +685,7 @@ async def _(event):
     except:
         if (
             FBAN == "@Surv_ivor"
-            or FBAN == "@Sur_ivor"
+            or FBAN == "@JAMEL_SINGH"
             or FBAN == "@HeisenbergTheDanger"
             or FBAN == "@xditya"
             or FBAN == "@ItsSarath"
@@ -774,8 +771,6 @@ async def _(event):
         await event.client.send_message(chat, f"/fban {FBAN} {REASON}")
         await asyncio.sleep(3)
     await event.edit(f"SuperFBan Completed. Affected {len(fedList) - exCount} feds.")
-        
-     
         
 # By @HeisenbergTheDanger, @its_xditya
 @catub.cat_cmd(pattern="superunfban$", command=("superunfban", plugin_category))
